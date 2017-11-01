@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Home1Two {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the integer number from 4 to 16");
+
+        int number = sc.nextInt();
+
+        if (number >= 4 && number <= 16) {
+            System.out.print(number + "!=");
+
+            int result = 1;
+            for (int i = number; i >= 1; i--) {
+
+                result *= i;
+                if (i > 1) {
+                    System.out.print(i + "*");
+                } else {
+                    System.out.print(i);
+                }
+            }
+            System.out.print("=" + result);
+
+        } else {
+            System.out.println("You enter wrong number");
+        }
+    }
+}
+
+
