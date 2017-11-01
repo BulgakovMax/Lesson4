@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Home2One {
+
+    public static void main(String[] args) {
+
+        System.out.println("Enter the value of rows");
+        Scanner sc = new Scanner (System.in);
+
+        int rows = sc.nextInt();
+        String star = "*";
+        for(int i =1; i <= rows; i ++){
+
+           System.out.println(star);
+
+            star += "*";
+
+        }
+        sc.close();
+    }
+}
