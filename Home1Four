@@ -17,7 +17,7 @@ public class Home1Four {
         for (int i = 0; i <= rows; i++) {
 
             for (int j = 0; j <= columns; j++) {
-                if (i == 1 || i == rows - 1 || j == columns -1 || j == 1) {
+                if (i == 0 || i == rows || j == columns || j == 0) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
